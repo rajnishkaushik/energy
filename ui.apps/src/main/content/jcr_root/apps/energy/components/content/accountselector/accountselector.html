@@ -1,0 +1,20 @@
+<h2>---- accountselector.html -----</h2>
+
+<p data-sly-test="${properties.jcr:Heading}">Heading property: ${properties.jcr:Heading}</p>
+
+
+<pre data-sly-use.hello="org.viewtrol.energy.core.models.HelloWorldModel">
+    Hello World Model (from Account Selector) says:
+    ${hello.message}
+</pre>
+
+<div data-sly-test="${properties.jcr:title && properties.jcr:description}">
+    <h1>${properties.jcr:title}</h1>
+    <p>${properties.jcr:description}</p>
+</div>
+
+<h3>${properties.jcr:description}</h3>
+
+<h2>---- accountselector.html -----</h2>
+
+<sly data-sly-include="accountselector.jsp"/>

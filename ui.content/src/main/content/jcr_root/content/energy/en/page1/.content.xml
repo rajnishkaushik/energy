@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2016-07-16T13:29:49.778-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/energy/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Page 1"
+        sling:resourceType="energy/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="energy/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="energy/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="energy/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="energy/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+            <helloworld
+                jcr:created="{Date}2016-07-16T08:47:27.834-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2016-07-16T08:47:43.527-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="energy/components/content/helloworld"
+                text="Hello Text (from Eclipse)"/>
+            <accountselector
+                jcr:created="{Date}2016-07-16T08:52:50.839-05:00"
+                jcr:createdBy="admin"
+                jcr:description="As the HTML Template Language doesn't allow to mix code inside the markup, it offers instead the Use-API extension mechanism to easily execute code from the template.&#xd;&#xa;&#xd;&#xa;The example above uses server-side executed JavaScript to shorten the title to 10 characters, but it could also have used Java code to do the same by providing a fully qualified Java class name. Generally, business logic should rather be built in Java, but when the component needs some view-specific changes from what the Java API provide, it can be convenient to use some server-side executed JavaScript to do that."
+                jcr:Heading="Heading Text that I just entered"
+                jcr:lastModified="{Date}2016-07-16T13:29:49.766-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="energy/components/content/accountselector"/>
+        </par>
+    </jcr:content>
+</jcr:root>
