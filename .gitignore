@@ -10,6 +10,9 @@ crx-quickstart
 # Ignore compilation results
 target
 
+# Files in bin folder
+bin/
+
 # Ignore IDE and Operating System artifacts
 .idea
 .classpath
