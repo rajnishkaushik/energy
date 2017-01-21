@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="This template demonstrates how a sling servlet be housed in the front end and called as well"
+    jcr:primaryType="cq:Template"
+    jcr:title="Sling servlet in template code"
+    allowedPaths="[/content/energy/.+]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="energy/components/structure/typical/slingservletpage"/>
+</jcr:root>

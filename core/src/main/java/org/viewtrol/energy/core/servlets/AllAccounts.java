@@ -13,6 +13,7 @@ import org.apache.sling.commons.json.io.JSONWriter;
 import org.apache.sling.jcr.api.SlingRepository;
 import java.util.UUID;
 
+// To test try: http://localhost:8967/bin/myAllAccounts
 @SlingServlet(paths = { "/bin/myAllAccounts" }, methods = "POST", metatype = true)
 @Properties({
 		@Property(name = "service.pid", value = "org.viewtrol.energy.core.servlets.AllAccounts", propertyPrivate = false),

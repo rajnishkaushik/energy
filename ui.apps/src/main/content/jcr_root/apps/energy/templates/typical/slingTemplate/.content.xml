@@ -7,5 +7,5 @@
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="energy/components/structure/slingTemplate"/>
+        sling:resourceType="energy/components/structure/typical/slingTemplate"/>
 </jcr:root>

@@ -23,6 +23,7 @@
     <%@include file="/libs/foundation/global.jsp"%><%
  
         String heading = (String)properties.get("jcr:Heading");
+    
 if (heading == null) {
     if(WCMMode.fromRequest(slingRequest) == WCMMode.EDIT) {
         %><%= Placeholder.getDefaultPlaceholder(slingRequest, component,

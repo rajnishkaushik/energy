@@ -7,22 +7,26 @@
     ranking="{Long}100">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="energy/components/structure/page">
+        sling:resourceType="energy/components/structure/typical/page">
         <logo
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="energy/components/structure/logo"/>
+            sling:resourceType="energy/components/structure/typical/logo"/>
         <title
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="energy/components/content/title"/>
+            sling:resourceType="energy/components/content/typical/title">
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="energy/components/structure/logo"/>
+        </title>
         <topnav
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="energy/components/structure/topnav"/>
+            sling:resourceType="energy/components/structure/typical/topnav"/>
         <par
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/parsys">
             <text
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="energy/components/content/text"
+                sling:resourceType="energy/components/content/typical/text"
                 text="&lt;p>This is a content page&lt;/p>"
                 textIsRich="true"/>
         </par>
