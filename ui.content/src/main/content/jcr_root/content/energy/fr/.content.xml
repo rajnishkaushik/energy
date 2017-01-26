@@ -70,5 +70,6 @@
             <file/>
         </image>
     </jcr:content>
-    <sling-servlet-in-jsp-code/>
+    
+    
 </jcr:root>

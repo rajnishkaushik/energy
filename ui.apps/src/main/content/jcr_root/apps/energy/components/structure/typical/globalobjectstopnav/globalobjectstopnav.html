@@ -1,0 +1,23 @@
+<!--/*
+ Global object currentPage is used in globalobjectstopnav.js
+ HTL global objects: https://docs.adobe.com/docs/en/htl/docs/global-objects.html
+ 
+ The server side JS is referenced as data-sly-use.topnav, which
+ returns the list of pages
+ That list is iterated using "li"
+*/-->
+
+<ul class="topnav" data-sly-use.topnavlist="globalobjectstopnav.js"
+	data-sly-list="${topnavlist.items}">
+	<li class="topnav__item ${item.selected && 'topnav__item--selected'}">
+		<a class="topnav__link" href="${item.page.path}.html">${item.page.title}</a>
+	</li>
+</ul>
+<br>
+<br>
+<br>No Style list:
+<br>
+<ul data-sly-use.topnavlist="globalobjectstopnav.js"
+	data-sly-list="${topnavlist.items}">
+	<li><a href="${item.page.path}.html">${item.page.title}</a></li>
+</ul>

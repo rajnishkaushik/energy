@@ -2,14 +2,18 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2017-01-24T15:12:42.762-05:00"
+        cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         jcr:title="Energy Site Design"
         sling:resourceType="wcm/core/components/designer">
         <page jcr:primaryType="nt:unstructured">
             <par
+                jcr:lastModified="{Date}2017-01-24T15:10:30.105-05:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys"
-                components="[group:Energy Components]">
+                components="[group:Energy Components,group:Viewtrol]">
                 <colctrl
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="energy/components/content/colctrl"
@@ -25,6 +29,20 @@
                             type="Images"/>
                     </assetToComponentMapping>
                 </cq:authoring>
+                <section jcr:primaryType="nt:unstructured"/>
+                <editconfigexample
+                    jcr:lastModified="{Date}2017-01-24T15:01:24.828-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="energy/components/content/typical/editconfigexample">
+                    <image/>
+                </editconfigexample>
+                <designdialogtest
+                    jcr:lastModified="{Date}2017-01-24T15:12:42.759-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured">
+                    <image/>
+                </designdialogtest>
             </par>
             <logo
                 jcr:primaryType="nt:unstructured"
